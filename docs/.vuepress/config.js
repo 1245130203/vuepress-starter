@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
-  base: '/vuepress-starter',
+  base: '/vuepress-starter/',
   themeConfig: {
     nav: [
       // NavbarItem
