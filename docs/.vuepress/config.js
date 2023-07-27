@@ -13,14 +13,14 @@ module.exports = {
         text: '前端',
         ariaLabel: 'Language Menu',
         items: [
-          { text: 'Chinese', link: '/3d/' },
+          { text: 'Chinese', link: '/3d/3d/' },
           { text: 'vite', link: '/vite/' }
         ]
       },
       // NavbarGroup
       {
         text: '关于',
-        link: '/about',
+        link: '/about/',
         // children: ['/group/foo.md', '/group/bar.md'],
       },
       // 字符串 - 页面文件路径
