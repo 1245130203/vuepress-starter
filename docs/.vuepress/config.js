@@ -2,6 +2,16 @@ module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
   base: '/vuepress-starter/',
+  plugins: {
+    '@vuepress/medium-zoom': {
+      selector: 'img.zoom-custom-imgs',
+      // medium-zoom options here
+      // See: https://github.com/francoischalifour/medium-zoom#options
+      options: {
+        margin: 16
+      }
+    }
+  },
   themeConfig: {
     nav: [
       // NavbarItem
@@ -27,12 +37,12 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: 'Group 1',   // 必要的
-        path: '/about',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        title: '搜索技巧',   // 必要的
+        path: '/search',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          '/'
+          '/search'
         ]
       },
     ]
